@@ -25,7 +25,7 @@ public class PaddleMove : MonoBehaviour {
 	void SetPosFromInput()
 	{
 		Vector3 newPos = transform.position;
-
+        Debug.Log(Input.GetAxis(joystickAxis));
         newPos.y = MathJunk.map(Input.GetAxis(joystickAxis), -1.0f, 1.0f, bottomLimit.position.y, topLimit.position.y);
 
         transform.position = newPos;

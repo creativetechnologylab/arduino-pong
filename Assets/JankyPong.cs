@@ -24,7 +24,7 @@ public class JankyPong : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (Input.GetKeyUp(KeyCode.JoystickButton0) && reset)
+		if (Input.GetButtonUp("Submit") && reset)
 		{
 			ball.velocity = Vector2.zero;
             
