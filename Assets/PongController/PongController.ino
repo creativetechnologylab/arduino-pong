@@ -1,4 +1,6 @@
-#include "HID-Project.h"
+#include <HID-Project.h>
+#include <HID-Settings.h>
+
 #define X_POT A0
 #define Y_POT A1
 #define CLR_BTN 7
@@ -12,7 +14,7 @@ void setup() {
   
 //  Serial.begin( 9600 );
 
-   Gamepad.begin();
+Gamepad.begin();
 }
 
 void loop() {
